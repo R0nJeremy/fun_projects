@@ -126,8 +126,55 @@ $$
 \end{split}
 $$
 
+### Description of the Commands
+All the commands can be specified by the $M$, $F$ and $C$ values. 
+#### Loading commands
+* $\text{LDA}$ command: `C=8, F=field`. Loads the $\text{CONTENTS}(M)$ into the
+  register $A$, with the specified $F$ field. 
 
+  In all operations, in the field $F$ is not full, the sign is loaded only if it is the part
+  of the field. Otherwise, $+$ sign is loaded. The rest of word is shifted towards *right*.
 
+  **Examples** If $F$ is the default $(0:5)$, then the whole Word at an address $M$ is loaded
+   into $rA$. If $F$ is $(1:5)$, then the Word is loaded with sign $+$. If at $M$ there is a 
+   command, and the field $F$ is $(0:2)$, then $\pm AA$ at $M$ is loaded as 
+   $$
+    \pm\quad 0\quad 0\quad 0\quad AA
+   $$
+
+   Let us say, the Word by an Address $2000$ is 
+   $$
+    -\quad 80\quad 3\quad 5\quad 4 
+   $$
+   Then, the value of $rA$ after several variations of the $\text{LDA}$ command, are
+   $$
+   \begin{split}
+    &\text{LDA}\qquad 2000\qquad\qquad\qquad\;\; -\quad 80\quad 3\quad 5\quad 4\\
+    &\text{LDA}\qquad 2000(1:5)\qquad\qquad +\quad 80\quad 3\quad 5\quad 4\\
+    &\text{LDA}\qquad 2000(3:5)\qquad\qquad +\quad 0\quad 0\quad 3\quad 5\quad 4\\
+    &\text{LDA}\qquad 2000(0:3)\qquad\qquad -\quad 0\quad 0\quad 80\quad 3\\
+    &\text{LDA}\qquad 2000(4:4)\qquad\qquad +\quad 0\quad 0\quad 0\quad 0\quad 5\\
+    &\text{LDA}\qquad 2000(0:0)\qquad\qquad -\quad 0\quad 0\quad 0\quad 0\quad 0\\
+    &\text{LDA}\qquad 2000(1:1)\qquad\qquad +\quad 0\quad 0\quad 0\quad 0\quad ?\\
+   \end{split}
+   $$
+    In the last examples, the unknown sign appears if the Byte size is undefined. 
+
+* $\text{LDX}$ command: `C=15, F=field`. Identical to $\text{LDA}$ command, but loads the $rX$
+  
+* $\text{LD}i$ command: `C=8+i, F=field`. Identical to $\text{LDA}$ command, but the 
+ index register $rI_i$ is loaded. Since index registers are only two Bytes, it is assumed
+ that the Bytes by numbers $1,2,3$ are zero. If those Bytes are not set to zero, the result
+ of $\text{LD}i$ is undefined. Obviously, $1\leqslant i\leqslant 6$, and the actual notations 
+ of the commands are $\text{LD}2, \text{LD}2, \text{LD}3, \text{LD}4, \text{LD}5, \text{LD}6$.
+
+* $\text{LDAN}$ command: `C=16, F=field`. Identical to $\text{LDA}$, but loads $rA$ with inverse sign.
+
+* $\text{LDXN}$ command: `C=23, F=field`. Identical to $\text{LDXN}$, but load $rX$.
+* $\text{LD}i\text{N}$ command: `C=16+i, F=field`. Identical to $\text{LD}i$, but load the index
+  register with inverse sign.
+
+#### Storing commands
 
 
 
