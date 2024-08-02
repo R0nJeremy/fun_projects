@@ -13,7 +13,7 @@
 #pagebreak()
 
 #include "chapters_801-810.typ"
-//#include "chapters_811-820.typ"
+#include "chapters_811-820.typ"
 //#include "chapters_821-830.typ"
 //#include "chapters_831-840.typ"
 //#include "chapters_841-850.typ"
