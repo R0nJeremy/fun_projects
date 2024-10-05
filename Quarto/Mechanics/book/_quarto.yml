@@ -1,0 +1,17 @@
+project: 
+  type: book
+
+book: 
+  title: "Классическая Механика"
+  author: "Ернур Байболатов"
+
+  chapters: 
+    - index.qmd
+    - measuring.qmd
+
+format:
+  html:
+    theme:
+      light: cosmo
+    code-fold: false    
+

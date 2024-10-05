@@ -1,0 +1,23 @@
+project:
+  type: book
+
+book:
+  title: "Классическая Механика"
+  author: "Ернур Байболатов"
+  date: today
+  cover-image: quantum-physics-touch.png
+  chapters:
+    - index.qmd    
+    - measuring_motion.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: lux
+  pdf:
+    documentclass: scrreprt
+
+
+

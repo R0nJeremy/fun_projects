@@ -1,0 +1,62 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Классическая Механика",
+    "section": "",
+    "text": "Прелюдия\nДанная работа является компиляцией моих идей и мыслей на тему классической механики и в целом физики. Здесь преследются несколько целей. Во первых, это углубление и систематизация моих знаний. Во второых, подготовка материала к будущим видео урокам по теме.\nВ связи с этим, изложение материала будет строится на максимально элементарном уровне, ориентировочно для студентов-физиков младших курсов. Вся необходимая математика будет также излагаться по мере необходимости. С этой точки зрения, книга планируется быть самодостаточной.\nТакже, планируется довольно серьезный упор на разбор задач по каждой теме.",
+    "crumbs": [
+      "Прелюдия"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "Литература",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "Литература"
+    ]
+  },
+  {
+    "objectID": "measuring_the_world.html",
+    "href": "measuring_the_world.html",
+    "title": "1  Измерение мира",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Измерение мира</span>"
+    ]
+  },
+  {
+    "objectID": "measuring_motion.html",
+    "href": "measuring_motion.html",
+    "title": "1  Измерение мира",
+    "section": "",
+    "text": "Measuring the world is in the essence of physics.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Измерение мира</span>"
+    ]
+  }
+]
